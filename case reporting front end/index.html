@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f7f1">
+    <meta name="description" content="A calm campus care workspace. Browser-only storage; not monitored.">
+    <title>Harbor | Campus care</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="storage-alert" id="storage-alert" role="status" hidden></div>
+
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Harbor campus care home" data-view-link="report">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none"><path d="M20 4 34 10v9c0 8.4-5.7 14.8-14 17-8.3-2.2-14-8.6-14-17v-9L20 4Z" stroke="currentColor" stroke-width="1.7"/><path d="M12 22c2.1-3.8 4.7-5.7 8-5.7s5.9 1.9 8 5.7M15.2 26.5h9.6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-copy"><strong>harbor</strong><small>campus care</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-link active" type="button" data-view="report" aria-current="page">Make a report</button>
+        <button class="nav-link" type="button" data-view="track">Check progress</button>
+        <button class="nav-link" type="button" data-view="staff">Staff workspace</button>
+        <button class="nav-link" type="button" data-view="patterns">   profile</button>
+      </nav>
+      <button class="quiet-button help-button" type="button" data-scroll-support>
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="7.5" stroke="currentColor" stroke-width="1.5"/><path d="M8.2 7.5a1.9 1.9 0 1 1 3.5 1c-.7 1-1.7 1.1-1.7 2.6M10 14h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        <span>Need help?</span>
+      </button>
+      <button class="mobile-menu-button" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="view is-active" id="view-report" aria-labelledby="page-title-report">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> A place to be heard</div>
+            <h1 id="page-title-report">You deserve to feel<br><em>safe here.</em></h1>
+            <p class="hero-lede">If something happened, you can tell us in your own time. You decide what to share, and you can ask for support without making a formal report.</p>
+            <div class="hero-actions">
+              <button class="button button-primary" type="button" data-start-report>Share what happened <span aria-hidden="true"></span></button>
+              <button class="button button-text" type="button" data-view-link="track">Already have a reference? <span aria-hidden="true">  </span></button>
+            </div>
+            <div class="hero-assurance">
+              <span class="assurance-icon" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none"><path d="M10 2.5 16 5v4c0 4-2.5 7-6 8.5C6.5 16 4 13 4 9V5l6-2.5Z" stroke="currentColor" stroke-width="1.4"/><path d="m7.5 9.7 1.7 1.7 3.5-3.7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+              <span><strong>Your choice, at your pace.</strong><small>Read how privacy works before deciding.</small></span>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="art-sun"></div>
+            <div class="art-card art-card-back"></div>
+            <div class="art-card art-card-front">
+              <div class="art-card-top"><span class="art-spark">✳</span><span>ROOM TO BREATHE</span></div>
+              <div class="art-wave wave-one"></div><div class="art-wave wave-two"></div><div class="art-wave wave-three"></div>
+              <div class="art-card-caption">Your voice<br>matters here.</div>
+              <div class="art-card-bottom"><span>HARBOR · CAMPUS CARE</span><span>01 / 03</span></div>
+            </div>
+            <div class="art-leaf leaf-one"></div><div class="art-leaf leaf-two"></div><div class="art-leaf leaf-three"></div>
+            <div class="art-stem"></div>
+            <div class="art-caption"><span class="caption-dot"></span><span>There is no “right” way to ask for help.</span></div>
+          </div>
+        </div>
+
+        <div class="content-wrap">
+          <div class="privacy-strip">
+            <div class="privacy-symbol"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 20 6v5.5c0 5-3.4 8.4-8 9.8-4.6-1.4-8-4.8-8-9.8V6l8-3Z" stroke="currentColor" stroke-width="1.6"/><path d="M9 11.5V10a3 3 0 0 1 6 0v1.5m-7 0h8v5H8v-5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div><strong>Privacy depends on secure systems.</strong><p>A live service should restrict report access and explain any safety or legal limits. This browser-only version does not provide those protections; its records can be seen by other people using this device.</p></div>
+            <button class="text-link" type="button" data-start-report>See what happens next <span aria-hidden="true"> </span></button>
+          </div>
+
+          <div class="section-heading">
+            <div><div class="eyebrow"><span class="eyebrow-line"></span> Your options</div><h2>Support, in the way that works for you.</h2></div>
+            <p>You don’t have to be sure what to call it. You can start with what feels right today.</p>
+          </div>
+          <div class="option-grid">
+            <article class="option-card">
+              <span class="option-number">01</span><div class="option-icon icon-lilac"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5.5h14v10H9l-4 3v-13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8.5 9h7m-7 3h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <h3>Tell us what happened</h3><p>Share as much or as little as you want. You can choose whether to leave contact details.</p><button type="button" class="card-link" data-start-report>Start a report <span aria-hidden="true">  </span></button>
+            </article>
+            <article class="option-card">
+              <span class="option-number">02</span><div class="option-icon icon-sage"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="6.5" stroke="currentColor" stroke-width="1.5"/><path d="m16 16 4 4m-9-12v6m-3-3h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+              <h3>Follow your report</h3><p>Use a reference code to look up local updates in this browser. Records do not sync to other devices.</p><button type="button" class="card-link" data-view-link="track">Check progress <span aria-hidden="true">  </span></button>
+            </article>
+            <article class="option-card">
+              <span class="option-number">03</span><div class="option-icon icon-peach"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 12h2l1-2 2 4 1-2h2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+              <h3>Talk to someone</h3><p>Get support or talk through your options without deciding whether to report.</p><button type="button" class="card-link" data-scroll-support>Find support <span aria-hidden="true">  </span></button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-form" aria-labelledby="form-title" hidden>
+        <div class="flow-layout">
+          <aside class="flow-aside">
+            <button type="button" class="back-link" data-view-link="report"><span aria-hidden="true">←</span> Back to overview</button>
+            <div class="eyebrow"><span class="eyebrow-line"></span> A few gentle steps</div>
+            <h1 id="form-title" tabindex="-1">Share what<br>you’re ready to.</h1>
+            <p>This should take about 5 minutes. You can stop at any time.</p>
+            <div class="flow-step-list" aria-label="Report steps">
+              <div class="flow-step current" data-step-indicator="1"><span>1</span><div><strong>Your choice</strong><small>How to reach you</small></div></div>
+              <div class="step-connector"></div>
+              <div class="flow-step" data-step-indicator="2"><span>2</span><div><strong>What happened</strong><small>Only what you want to share</small></div></div>
+              <div class="step-connector"></div>
+              <div class="flow-step" data-step-indicator="3"><span>3</span><div><strong>Review & send</strong><small>Check before submitting</small></div></div>
+            </div>
+            <div class="aside-note"><span aria-hidden="true">✳</span><span>You can ask for support without making a formal report.</span></div>
+          </aside>
+
+          <div class="form-column">
+            <form id="report-form" novalidate>
+              <div class="form-step active" data-step="1">
+                <div class="form-step-heading"><span class="step-kicker">STEP 01 / 03</span><h2>How would you like to take part?</h2><p>There’s no wrong answer. Anonymous reporting may limit what staff can follow up on.</p></div>
+                <fieldset class="choice-fieldset">
+                  <legend>Choose what feels right</legend>
+                  <label class="choice-card selected"><input type="radio" name="identity" value="anonymous" checked><span class="radio-custom"></span><span class="choice-copy"><strong>I’d like to stay anonymous</strong><small>We won’t ask for your name or contact details.</small></span><span class="choice-badge">Private</span></label>
+                  <label class="choice-card"><input type="radio" name="identity" value="contact"><span class="radio-custom"></span><span class="choice-copy"><strong>I’m open to being contacted</strong><small>Share contact details so staff can follow up with you.</small></span></label>
+                </fieldset>
+                <div class="contact-fields" hidden>
+                  <label class="field-label" for="reporter-name">Name <span class="optional">Optional</span></label>
+                  <input class="text-input" id="reporter-name" name="reporterName" type="text" autocomplete="name" placeholder="What would you like us to call you?">
+                  <label class="field-label" for="reporter-email">Email or phone <span class="optional">Optional</span></label>
+                  <input class="text-input" id="reporter-email" name="reporterContact" type="text" autocomplete="email" placeholder="A safe way to reach you">
+                </div>
+                <div class="form-actions"><span class="form-reassurance"><span aria-hidden="true">⌑</span> You’re in control of what you share.</span><button type="button" class="button button-primary" data-next-step="2">Continue <span aria-hidden="true"> </span></button></div>
+              </div>
+
+              <div class="form-step" data-step="2" hidden>
+                <div class="form-step-heading"><span class="step-kicker">STEP 02 / 03</span><h2>What would you like us to know?</h2><p>Use fictional details only. You can leave any part blank.</p></div>
+                <label class="field-label" for="incident-description">Tell us what happened <span class="optional">Optional</span></label>
+                <textarea class="text-input textarea" id="incident-description" name="description" rows="6" placeholder="Share only what feels useful. You might include what happened, when, and what support you would like."></textarea>
+                <div class="field-row">
+                  <div><label class="field-label" for="incident-date">About when? <span class="optional">Optional</span></label><input class="text-input" id="incident-date" name="incidentDate" type="date"></div>
+                  <div><label class="field-label" for="incident-place">Where on campus? <span class="optional">Optional</span></label><input class="text-input" id="incident-place" name="incidentPlace" type="text" placeholder="For example, a campus building"></div>
+                </div>
+                <label class="field-label" for="desired-support">What would feel helpful now? <span class="optional">Optional</span></label>
+                <select class="text-input" id="desired-support" name="desiredSupport">
+                  <option value="">Choose an option, or skip</option><option>Information about my options</option><option>A conversation with a support person</option><option>Help with a safety plan</option><option>I’m not sure yet</option>
+                </select>
+                <div class="form-actions"><button type="button" class="button button-outline" data-prev-step="1"><span aria-hidden="true">←</span> Back</button><button type="button" class="button button-primary" data-next-step="3">Continue <span aria-hidden="true"> </span></button></div>
+              </div>
+
+              <div class="form-step" data-step="3" hidden>
+                <div class="form-step-heading"><span class="step-kicker">STEP 03 / 03</span><h2>Take a moment to review.</h2><p>Check the information you entered before saving this fictional practice report to this browser.</p></div>
+                <div class="review-card"><div><span class="review-label">Contact preference</span><strong id="review-identity">Anonymous</strong></div><div><span class="review-label">Your message</span><p id="review-description">No message added.</p></div></div>
+                <div class="privacy-explainer review-notice"><div class="privacy-explainer-head"><span class="mini-shield" aria-hidden="true">i</span><strong>Where this report goes</strong></div><p>It is saved on this device only. It is not sent to campus staff, does not trigger support, and may be visible to other people with access to this browser. This page is not monitored.</p></div>
+                <label class="consent-check"><input type="checkbox" id="demo-confirm"><span>I understand this is a local practice record, not a real report. I will not enter real or identifying information.</span></label>
+                <p class="form-error" id="form-error" role="alert" hidden>Please confirm you understand this is only stored in this browser and is not a real report.</p>
+                <div class="form-actions"><button type="button" class="button button-outline" data-prev-step="2"><span aria-hidden="true">←</span> Back</button><button type="submit" class="button button-primary">Save practice report <span aria-hidden="true"> </span></button></div>
+              </div>
+            </form>
+            <div class="receipt-card" id="receipt-card" hidden aria-live="polite">
+              <div class="receipt-check" aria-hidden="true">✓</div><span class="step-kicker">SAVED IN THIS BROWSER</span><h2>Your practice report is saved.</h2>
+              <p>This record is on this device only. It has not been sent to anyone and will not receive a response.</p>
+              <div class="reference-box"><span>Your local reference</span><strong id="receipt-reference">HB-26-7K4M</strong><small>Keep the code to look up this browser’s practice record.</small></div>
+              <button type="button" class="button button-primary" data-view-link="report">Return to overview</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-track" aria-labelledby="track-title" hidden>
+        <div class="workspace-page">
+          <div class="workspace-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> Your updates</div><h1 id="track-title">Check your progress.</h1><p>Enter the reference code for a report saved in this browser.</p></div><div class="workspace-illustration track-illustration" aria-hidden="true"><span>  </span><div></div></div></div>
+          <div class="track-layout">
+            <div class="track-card">
+              <form id="track-form">
+                <label class="field-label" for="reference-code">Your reference code</label>
+                <div class="track-input-row"><input class="text-input" id="reference-code" name="reference" type="text" autocomplete="off" placeholder="For example, HB-26-7K4M" required><button class="button button-primary" type="submit">Check status <span aria-hidden="true"> </span></button></div>
+                <p class="form-error" id="track-error" role="alert" hidden>We couldn’t find a local record with that reference. Check the code and try again.</p>
+              </form>
+              <div class="case-status-result" id="case-status-result" hidden aria-live="polite">
+                <div class="status-result-top"><div><span class="review-label">LOCAL RECORD</span><h2 id="track-result-title">Practice report</h2></div><span class="status-pill status-in-progress" id="track-status-pill"><span></span><span id="track-status">Received</span></span></div>
+                <div class="status-timeline" id="track-timeline"></div>
+                <div class="status-note"><strong>Latest update</strong><p id="track-note">No updates yet.</p><small id="track-note-date"></small></div>
+                <p class="tracking-caution"><span aria-hidden="true">ⓘ</span> Local browser data is not encrypted or protected from other people using this device.</p>
+              </div>
+            </div>
+            <aside class="track-side-note"><div class="option-icon icon-lilac"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 20 6v5.5c0 5-3.4 8.4-8 9.8-4.6-1.4-8-4.8-8-9.8V6l8-3Z" stroke="currentColor" stroke-width="1.5"/><path d="M9 11.5V10a3 3 0 0 1 6 0v1.5m-7 0h8v5H8v-5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>Keep your reference handy.</h3><p>This code looks up a record in this browser only. It does not protect the record from other people using this device. A real service needs secure sign-in.</p><button type="button" class="text-link" data-scroll-support>Need help finding support? <span aria-hidden="true"> </span></button></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-login" aria-labelledby="login-title" hidden>
+        <div class="login-page">
+          <div class="login-heading">
+            <div class="eyebrow"><span class="eyebrow-line"></span> Browser account</div>
+            <h1 id="login-title">Welcome to the<br><em>staff sign-in.</em></h1>
+            <p>Choose a local account to open the case staff or committee workspace.</p>
+          </div>
+          <p class="account-note">These shared accounts only switch the interface in this browser; they don’t authenticate users or protect case data. Use fictional practice information only.</p>
+        
+          <form id="login-form" class="login-form" novalidate>
+            <h2>Or enter an account</h2>
+            <label class="field-label" for="login-username">Username</label>
+            <input class="text-input" id="login-username" name="username" type="text" autocomplete="username" required>
+            <label class="field-label" for="login-password">Password</label>
+            <input class="text-input" id="login-password" name="password" type="password" autocomplete="current-password" required>
+            <p class="form-error" id="login-error" role="alert" hidden>That username and password don’t match a local account. Try one of the accounts above.</p>
+            <p class="login-access-error" id="login-access-error" role="alert" hidden></p>
+            <button class="button button-primary" type="submit">Sign in <span aria-hidden="true"> </span></button>
+          </form>
+        </div>
+      </section>
+
+      <section class="view" id="view-staff" aria-labelledby="staff-title" hidden>
+        <div class="workspace-page">
+          <div class="workspace-heading staff-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> Case staff workspace · This browser</div><h1 id="staff-title">Care takes follow-through.</h1><p>Review reports and record follow-up actions.</p></div><div class="workspace-account"><div class="staff-user"><span class="avatar" data-account-initials>AM</span><span><strong data-account-name>Alex Morgan</strong><small data-account-role>Case staff · local account</small></span><span class="role-pill">STAFF</span></div><button class="sign-out-button" type="button" data-sign-out>Sign out</button></div></div>
+          <p class="account-note">Records are stored in this browser and may be visible to others using this device. Account switching is not secure access control.</p>
+          <div class="staff-summary"><div><span>Open cases</span><strong id="staff-open-count">0</strong><small>Saved in this browser</small></div><div><span>Awaiting first review</span><strong id="staff-new-count">0</strong><small>Status: received</small></div><div><span>Follow-ups due</span><strong id="staff-followup-count">0</strong><small>Marked for follow-up</small></div></div>
+          <div class="staff-panel">
+            <div class="panel-heading"><div><h2>Recent cases</h2><p>Records saved in this browser</p></div><button class="filter-button" type="button" id="clear-local-cases">Clear local records</button></div>
+            <div class="clear-confirmation" id="clear-confirmation" hidden>
+              <p>Delete all reports, updates, and pattern-review decisions stored in this browser? This cannot be undone.</p>
+              <div><button class="button button-outline button-small" type="button" id="cancel-clear-cases">Keep records</button><button class="button button-primary button-small" type="button" id="confirm-clear-cases">Delete records</button></div>
+            </div>
+            <div class="case-list" role="list" id="case-list"></div>
+            <div class="case-detail" id="case-detail" hidden>
+              <div class="detail-heading"><div><span class="review-label">SELECTED CASE</span><h3 id="selected-case-title"></h3></div><label class="status-select-label" for="staff-status">Update status <select class="status-select" id="staff-status"><option>Received</option><option>In review</option><option>Follow-up</option><option>Closed</option></select></label></div>
+              <div class="detail-grid"><div><span class="review-label">What happened</span><p id="staff-description"></p></div><div><span class="review-label">Reporter’s request</span><p id="staff-request"></p></div><div><span class="review-label">Submitted</span><p id="staff-submitted"></p></div><div><span class="review-label">Contact preference</span><p id="staff-identity"></p></div><div><span class="review-label">Contact details</span><p id="staff-contact"></p></div><div><span class="review-label">Location</span><p id="staff-location"></p></div><div><span class="review-label">Incident date</span><p id="staff-incident-date"></p></div></div>
+              <label class="field-label" for="staff-note">Update for reporter <span class="optional">Shown in the local status lookup</span></label>
+              <textarea class="text-input staff-note" id="staff-note" rows="2" placeholder="Record a relevant action or follow-up..."></textarea>
+              <div class="detail-footer"><span class="audit-hint"><span aria-hidden="true">◷</span> Updates are saved on this device only.</span><button type="button" class="button button-primary button-small" id="save-case-note">Save update</button></div>
+              <p class="save-feedback" id="save-feedback" role="status" hidden></p>
+              <div class="case-audit"><span class="review-label">LOCAL ACTIVITY HISTORY</span><div id="case-audit-list"></div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="view-patterns" aria-labelledby="patterns-title" hidden>
+        <div class="workspace-page">
+          <div class="workspace-heading pattern-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span>    profile · This browser</div><h1 id="patterns-title">Look for patterns.<br><em>Carefully.</em></h1><p>Possible wording overlaps can help focus review, but a human decides what they mean.</p></div><div class="pattern-account"><div class="staff-user"><span class="avatar committee-avatar" data-account-initials>CL</span><span><strong data-account-name>Casey Lee</strong><small data-account-role>Committee member · local account</small></span><span class="role-pill committee-role">COMMITTEE</span></div><button class="sign-out-button" type="button" data-sign-out>Sign out</button></div><div class="pattern-mark" aria-hidden="true"><span>✳</span><span>✳</span><span>✳</span><i></i></div></div>
+          <p class="account-note">Keyword overlaps are suggestions, not findings. A human must review them; this account switch does not protect the records.</p>
+          <div class="pattern-layout">
+            <div class="pattern-main">
+              <div class="panel-heading"><div><h2>Suggestions for human review</h2><p>Possible keyword overlap · no identities shown</p></div><span class="role-pill committee-role">COMMITTEE</span></div>
+              <div id="suggestion-list"></div>
+              <div class="human-review-note"><span class="review-note-icon" aria-hidden="true">✳</span><p><strong>Human review is required.</strong> This tool does not make determinations, link cases, or trigger action. A trained reviewer must record a purpose, consider privacy, and decide whether further review is appropriate.</p></div>
+            </div>
+            <aside class="pattern-boundary"><div class="option-icon icon-peach"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 20 6v5.5c0 5-3.4 8.4-8 9.8-4.6-1.4-8-4.8-8-9.8V6l8-3Z" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4m0 3h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><h3>Small circle. Clear purpose.</h3><p>Only specifically authorized committee members should see pattern suggestions, and only for an approved safety or support purpose.</p><div class="boundary-divider"></div><h4>Not for</h4><ul><li>Identifying or profiling students</li><li>Making findings from text alone</li><li>Training or improving AI models</li><li>Disciplinary action without human review</li></ul></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="support-section" id="support" aria-labelledby="support-title">
+        <div class="support-art" aria-hidden="true"><span class="support-orb"></span>
+          <div class="support-sun"></div><span class="support-spark">✳</span></div>
+        <div class="support-copy"><div class="eyebrow"><span class="eyebrow-line">
+
+        </span> Here for you</div><h2 id="support-title">You don’t have to<br>
+          figure it out alone.</h2><p>Talking with someone doesn’t commit you to making a report. 
+            You can ask questions, explore options, or simply be heard.</p><div class="support-contacts">
+              <div><span class="contact-icon">01</span><span><strong>Student support services</strong>
+                <small>For confidential listening and options</small>
+              </span><a href="https://emergency.ug">Find your campus contact   
+
+              </a></div><div><span class="contact-icon">02</span><span><strong>Immediate safety concern
+
+              </strong><small>If you or someone else is in immediate danger</small></span>
+              <a href="https://worldhotlines.org/country/ug" rel="noreferrer">Contact local emergency services  
+                 </a></div></div><p class="contact-footnote">Example links only — replace with verified local resources before use.
+                   This browser-only page is not monitored.</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><a class="footer-brand" href="#home" data-view-link="report">harbor <span>· campus care</span></a><span>Care starts with listening.</span><span class="footer-demo">Local browser storage · Not monitored</span></footer>
+  </body>
+</html>
